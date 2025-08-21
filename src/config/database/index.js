@@ -1,7 +1,15 @@
 import { env } from "../env/index.js"
 import mysql from "mysql2"
 import { DB_NAME } from "../../constants.js"
-import fs from "fs"
+import fs from 'fs';
+import path from 'path';
+import { fileURLToPath } from 'url';
+
+// Resolve __dirname in ESM
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
+const caCert = fs.readFileSync(path.join(__dirname, 'ca.pem'));
 
 const connection = mysql.createConnection({
   host: env.DB_HOST,
@@ -10,7 +18,7 @@ const connection = mysql.createConnection({
   password: env.DB_PASSWORD,
   database: DB_NAME,
   ssl: {
-    ca: fs.readFileSync("./src/config/database/ca.pem")
+    ca: caCert
   }
 })
 
