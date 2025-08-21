@@ -1,11 +1,11 @@
 {
   "name": "pms-backend",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "api/index.js",
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon src/index.js"
+    "start": "nodemon src/api/index.js"
   },
   "keywords": [
     "javascript",
@@ -27,6 +27,7 @@
     "mysql2": "^3.12.0",
     "nodemailer": "^7.0.5",
     "otp-generator": "^4.0.1",
+    "serverless-http": "^3.2.0",
     "uid2": "^1.0.0"
   },
   "devDependencies": {
