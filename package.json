@@ -1,0 +1,36 @@
+{
+  "name": "pms-backend",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon src/index.js"
+  },
+  "keywords": [
+    "javascript",
+    "node",
+    "express",
+    "bcrypt",
+    "jsonwebtoken"
+  ],
+  "author": "shivam thakur",
+  "license": "ISC",
+  "description": "a backend project for project management system",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "jsonwebtoken": "^9.0.2",
+    "mysql2": "^3.12.0",
+    "nodemailer": "^7.0.5",
+    "otp-generator": "^4.0.1",
+    "uid2": "^1.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10",
+    "prettier": "^3.6.2"
+  }
+}
