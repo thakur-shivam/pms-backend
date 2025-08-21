@@ -1,6 +1,6 @@
 import { env } from "../config/env/index.js"
 import { connectDB } from "../config/database/index.js"
-import { app } from "../app.js"
+import app from "../app.js"
 import Serverless from "serverless-http"
 
 const PORT = env.PORT || 3000
