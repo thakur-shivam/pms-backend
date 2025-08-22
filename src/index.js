@@ -6,10 +6,10 @@ const PORT = env.PORT || 3000
 
 connectDB()
 
-app.on("ERROR", (error) => {
-    console.log("ERROR: ", error)
-    throw error
-})
-app.listen(PORT, () => {
-    console.log(`sever is running on http://localhost:${PORT}`)
-})
+// app.on("ERROR", (error) => {
+//     console.log("ERROR: ", error)
+//     throw error
+// })
+// app.listen(PORT, () => {
+//     console.log(`sever is running on http://localhost:${PORT}`)
+// })
